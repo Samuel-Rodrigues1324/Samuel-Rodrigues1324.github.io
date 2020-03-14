@@ -32,14 +32,49 @@
             margin-right: -60px;
         }
 
-        #imagensProjetos{
-            width: 30%;
+        .imgMachine{
+            width: 40%;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .imgMachine img{
-            width: 30%;
+        .machines{
+            width: 100%;
+            position:absolute;
+            opacity: 0;
+            animation-name: animacao;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
         }
-        
+
+        @keyframes animacao{
+            25%{
+                opacity: 1;
+                transform: scale(1.1,1.1);
+            }
+
+            50%{
+                opacity: 0;
+            }
+        }
+
+        .machines:nth-child(1){
+
+        }
+        .machines:nth-child(2){
+            animation-delay: 5s;
+        }
+        .machines:nth-child(3){
+            animation-delay: 10s;
+        }
+        .machines:nth-child(4){
+            animation-delay: 15s;
+        }
+        .machines:nth-child(5){
+            animation-delay: 20s;
+        }
+
     </style>
 </head>
 <body>
@@ -75,8 +110,8 @@
     <section class="container">
 
         <h1>Meus Projetos</h1>
-        <br><br>
-        <h4>Projeto Machine Makers</h4>
+        <br>
+        <h4>Projeto Monster Machines</h4>
         <div class="imgMachine">
             <img src="imagens/projetos/machineMakers.jpg" class="machines">
             <img src="imagens/projetos/MachineMakers2.jpg" class="machines">
