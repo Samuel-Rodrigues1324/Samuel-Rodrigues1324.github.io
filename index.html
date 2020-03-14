@@ -9,13 +9,18 @@
         *{
             margin: 0px;
             padding: 0px;
+            
+        }
+
+        body{
+            overflow-x: hidden;
         }
 
         #header{
             background-image: url('imagens/background.png');
             background-repeat: no-repeat;
             background-position: center;
-            width: 100%;
+            width: 100vw;
             height: 27vh;
         }
 
@@ -32,33 +37,34 @@
             margin-right: -60px;
         }
 
+
+
         .imgMachine{
             width: 40%;
-            height: 600px;
+            height: 400px;
             position: relative;
             overflow: hidden;
         }
-
         .machines{
             width: 100%;
             position:absolute;
             opacity: 0;
-            animation-name: animacao;
-            animation-duration: 20s;
+            animation-name: animacao1;
+            animation-duration: 25s;
             animation-iteration-count: infinite;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
         }
-
-        @keyframes animacao{
+        @keyframes animacao1{
             25%{
                 opacity: 1;
                 transform: scale(1.1,1.1);
             }
-
             50%{
                 opacity: 0;
             }
         }
-
         .machines:nth-child(1){
 
         }
@@ -73,6 +79,183 @@
         }
         .machines:nth-child(5){
             animation-delay: 20s;
+        }
+
+
+        
+        .imgGames{
+            width: 70%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        .games{
+            width: 100%;
+            position:absolute;
+            opacity: 0;
+            animation-name: animacao2;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+        @keyframes animacao2{
+            25%{
+                opacity: 1;
+                transform: scale(1.0,1.0);
+            }
+            50%{
+                opacity: 0;
+            }
+        }
+        .games:nth-child(1){
+
+        }
+        .games:nth-child(2){
+            animation-delay: 5s;
+        }
+        .games:nth-child(3){
+            animation-delay: 10s;
+        }
+        .games:nth-child(4){
+            animation-delay: 15s;
+        }
+        
+
+
+        .imgAlu{
+            width: 70%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        .aluno{
+            width: 100%;
+            position:absolute;
+            opacity: 0;
+            animation-name: animacao3;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+        @keyframes animacao3{
+            25%{
+                opacity: 1;
+                transform: scale(1.0,1.0);
+            }
+
+            50%{
+                opacity: 0;
+            }
+        }
+        .aluno:nth-child(1){
+
+        }
+        .aluno:nth-child(2){
+            animation-delay: 5s;
+        }
+        .aluno:nth-child(3){
+            animation-delay: 10s;
+        }
+
+
+
+        .imgMat{
+            width: 70%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        .mat{
+            width: 100%;
+            position:absolute;
+            opacity: 0;
+            animation-name: animacao4;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+        @keyframes animacao4{
+            25%{
+                opacity: 1;
+                transform: scale(1.0,1.0);
+            }
+
+            50%{
+                opacity: 0;
+            }
+        }
+        .mat:nth-child(1){
+            
+        }
+        .mat:nth-child(2){
+            animation-delay: 5s;
+        }
+        .mat:nth-child(3){
+            animation-delay: 10s;
+        }
+
+
+
+        .imgPropriety{
+            width: 80%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        .propri{
+            width: 100%;
+            position:absolute;
+            opacity: 0;
+            animation-name: animacao5;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+        @keyframes animacao5{
+            25%{
+                opacity: 1;
+                transform: scale(1.0,1.0);
+            }
+
+            50%{
+                opacity: 0;
+            }
+        }
+        .propri:nth-child(1){
+            
+        }
+        .propri:nth-child(2){
+            animation-delay: 5s;
+        }
+        .propri:nth-child(3){
+            animation-delay: 10s;
+        }
+
+        .projetos{
+            float:left;
+            margin-left: 10%;
+            width: 63%;
+            background-color: #fff;
+            padding-left: 5%;
+        }
+        .eu{
+            float: left;
+            width: 26%;
+            border-left: hidden;
+            border-bottom: hidden;
+            border-bottom: solid;
+            border-left: solid;
+            border-color: #00FFFF;
+            border-width: 1px;
+            background-color: #fff;
         }
 
     </style>
@@ -107,7 +290,7 @@
 
         <br>
 
-    <section class="container">
+    <section class="projetos">
 
         <h1>Meus Projetos</h1>
         <br>
@@ -120,6 +303,52 @@
             <img src="imagens/projetos/Rústico.jpg" class="machines">
         </div>
 
+        <br>
+
+        <h4>Projeto Reloading Games(1ºAno)</h4>
+        <div class="imgGames">
+            <img src="imagens/projetos/projeto1.jpg" class="games">
+            <img src="imagens/projetos/projeto1.2.jpg" class="games">
+            <img src="imagens/projetos/projeto1regiter.jpg" class="games">
+            <img src="imagens/projetos/loginprojeto1.jpg" class="games">
+        </div>
+
+        <br>
+        
+        <h4>Projeto "AlunoOnline"(2ºAno)</h4>
+        <div class="imgAlu">
+            <img src="imagens/projetos/AlunoOnline.jpg" class="aluno">
+            <img src="imagens/projetos/Alunopag.jpg" class="aluno">
+            <img src="imagens/projetos/professorpag.jpg" class="aluno">
+        </div>
+
+        <br>
+
+        <h4>Projeto Matemática(2ºAno)</h4>
+        <div class="imgMat">
+            <img src="imagens/projetos/conversor.jpg" class="mat">
+            <img src="imagens/projetos/conversor1.jpg" class="mat">
+            <img src="imagens/projetos/bhaskara.jpg" class="mat">
+        </div>    
+        
+        <br>
+
+        <h4>Projeto Propriety(2ºAno)</h4>
+        <div class="imgPropriety">
+            <img src="imagens/projetos/msg_contato.jpg" class="propri">
+            <img src="imagens/projetos/sobre.jpg" class="propri">
+            <img src="imagens/projetos/proprietysobre.jpg" class="propri">
+        </div>
+
+        <br><br>
+
     </section>
+
+    <aside class="eu">
+
+        <p><h3 style="margin-left: 5%;">Sobre mim</h3></p>
+        <center><img src="imagens/Eu.jpg" style="width: 50%;"></center>
+
+    </aside>
 
 </body>
