@@ -21,7 +21,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            width: 100%;
+            width: 100vw;
             height: 27vh;
         }
 
@@ -89,6 +89,50 @@
             animation-delay: 15s;
         }
         .machines:nth-child(5){
+            animation-delay: 20s;
+        }
+
+
+
+        .imgManu{
+            width: 80%;
+            height: 50vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .manu{
+            width: 100%;
+            position:absolute;
+            opacity: 0;
+            animation-name: animacao6;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+        }
+        @keyframes animacao6{
+            25%{
+                opacity: 1;
+                transform: scale(1.1,1.1);
+            }
+            50%{
+                opacity: 0;
+            }
+        }
+        .manu:nth-child(1){
+
+        }
+        .manu:nth-child(2){
+            animation-delay: 5s;
+        }
+        .manu:nth-child(3){
+            animation-delay: 10s;
+        }
+        .manu:nth-child(4){
+            animation-delay: 15s;
+        }
+        .manu:nth-child(5){
             animation-delay: 20s;
         }
 
@@ -317,7 +361,9 @@
     <section class="projetos">
 
         <h1>Meus Projetos</h1>
+
         <br>
+
         <h4>Projeto Monster Machines</h4>
         <div class="imgMachine">
             <img src="imagens/projetos/machineMakers.jpg" class="machines">
@@ -325,6 +371,17 @@
             <img src="imagens/projetos/transparencia.jpg" class="machines">
             <img src="imagens/projetos/maquinaDeCombate.jpg" class="machines">
             <img src="imagens/projetos/Rústico.jpg" class="machines">
+        </div>
+
+        <br>
+
+        <h4>Manutenção de notebooks</h4>
+        <div class="imgManu">
+            <img src="imagens/projetos/manutencao_thinkpad1.jpeg" class="manu">
+            <img src="imagens/projetos/manutencao_thinkpad2.jpeg" class="manu">
+            <img src="imagens/projetos/manutencao_thinkpad3.jpeg" class="manu">
+            <img src="imagens/projetos/manutencao_thinkpad4.jpeg" class="manu">
+            <img src="imagens/projetos/manutencao_thinkpad5.jpeg" class="manu">
         </div>
 
         <br>
